@@ -22,8 +22,16 @@
 				?>			
 			<div id="content">
 
-
-
+				<?php
+				$result = mysqli_query($conn,"SELECT * FROM exps");
+				echo "<ul>";
+					while($row = mysqli_fetch_array($result))
+					{
+					echo "<li><a href='http://134.255.234.216/exper/exper.php?exp=" . $row['exp_name'] . "'><h1>" . $row['header_intro'] . "</h1></a></li>";
+					echo "<li><h4>" . $row['description_intro'] . "</h4></li>";
+					}
+				echo "<ul>";
+				?>
 			</div>
 		<?php
 			}			
