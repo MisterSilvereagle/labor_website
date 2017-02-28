@@ -2,8 +2,29 @@
 	<head>
 		<title>Methodisch inkorrekt</title>
 		<link rel="stylesheet" href="style.css">
+		
+		<link rel="stylesheet" type="text/css" href="uk/semantic.min.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+		<script src="uk/semantic.min.js"></script>
 	</head>
 	<body>
+	
+	
+	<div style="
+    border-radius: 0px;" class="ui inverted menu">
+	  <a class="active item" href="index.php">
+		Home
+	  </a>
+	  <a class="item" href="createEXP.php">
+		Create
+	  </a>
+	  <a class="item" href="about.php">
+		About
+	  </a>
+	</div>
 		<?php
 		
 					include 'data/config.php';
@@ -60,7 +81,7 @@
 					?>
 							
 							
-		<div id="content">
+		<div id="content"  class="ui segment"> 
 			<h1 id="header">
 			 <?php echo $header_intro; ?>
 			</h1>

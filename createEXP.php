@@ -2,73 +2,112 @@
 	<head>
 		<title>Methodisch inkorrekt</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="uk/semantic.min.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+		<script src="uk/semantic.min.js"></script>
 	</head>
 	<body>
+	
+	
+	<div style="
+    border-radius: 0px;" class="ui inverted menu">
+	  <a class="item" href="index.php">
+		Home
+	  </a>
+	  <a class="active item" href="createEXP.php">
+		Create
+	  </a>
+	  <a class="item" href="about.php">
+		About
+	  </a>
+	</div>
 		
-		<div id="content">
+		<div id="content" class="ui segment">
 			<form name="uploadformular" action="createEXP.php" method="get" enctype="multipart/form-data">
+		  
+			  <div class="ui form">
 			  Experiment Name: <input type="text" name="exp_name"><br><br><br>
 			  
 			  Intro Header: <input type="text" name="header_intro"><br><br>
-			  Intro Bild: <input type="file" name="pic_intro" size="25"><br><br>
-			  Intro Beschreibung: <textarea  type="text" name="description_intro"> </textarea> <br><br><br>
+			  
+			  <div class="field">
+				<label>Intro Beschreibung: </label>
+				<textarea type="text" name="description_intro"></textarea>
+			  </div> <br><br><br>
 			  
 			  
 			  Schritt 1 Header: <input type="text" name="header_1"><br><br>
-			  Schritt 1 Bild: <input type="file" name="pic_1"><br><br>
-			  Schritt 1 Beschreibung: <textarea  type="text" name="description_1"></textarea><br><br><br>
+			    
+			  <div class="field">
+				<label>Schritt 1 Beschreibung: </label>
+				<textarea type="text" name="description_1"></textarea>
+			  </div> <br><br><br>
 			  
 			  
-			  Schritt 2 Header: <input type="text" name="header_2"><br><br>
-			  Schritt 2 Bild: <input type="file" name="pic_2"><br><br>
-			  Schritt 2 Beschreibung: <textarea  type="text" name="description_2"></textarea><br><br><br>
+			  Schritt 2 Header: <input type="text" name="header_2"><br><br><div class="ui form">
+			  <div class="field">
+				<label>Schritt 2 Beschreibung: </label>
+				<textarea type="text" name="description_2"></textarea>
+			  </div> <br><br><br>
 			  
 			  
 			  Schritt 3 Header: <input type="text" name="header_3"><br><br>
-			  Schritt 3 Bild: <input type="file" name="pic_3"><br><br>
-			  Schritt 3 Beschreibung: <textarea  type="text" name="description_3"></textarea><br><br><br>
-			  
+			  <div class="field">
+				<label>Schritt 3 Beschreibung: </label>
+				<textarea type="text" name="description_3"></textarea>
+			  </div> <br><br><br>
 			  
 			  Schritt 4 Header: <input type="text" name="header_4"><br><br>
-			  Schritt 4 Bild: <input type="file" name="pic_4"><br><br>
-			  Schritt 4 Beschreibung: <textarea  type="text" name="description_4"></textarea><br><br><br>
-			  
+			  <div class="field">
+				<label>Schritt 4 Beschreibung: </label>
+				<textarea type="text" name="description_4"></textarea>
+			  </div> <br><br><br>
 			  
 			  Schritt 5 Header: <input type="text" name="header_5"><br><br>
-			  Schritt 5 Bild: <input type="file" name="pic_5"><br><br>
-			  Schritt 5 Beschreibung: <textarea  type="text" name="description_5"></textarea><br><br><br>
-			  
+			  <div class="field">
+				<label>Schritt 5 Beschreibung: </label>
+				<textarea type="text" name="description_5"></textarea>
+			  </div> <br><br><br>
 			  
 			  Schritt 6 Header: <input type="text" name="header_6"><br><br>
-			  Schritt 6 Bild: <input type="file" name="pic_6"><br><br>
-			  Schritt 6 Beschreibung: <textarea  type="text" name="description_6"></textarea><br><br><br>
-			  
+			  <div class="field">
+				<label>Schritt 6 Beschreibung: </label>
+				<textarea type="text" name="description_6"></textarea>
+			  </div> <br><br><br>
 			  
 			  Schritt 7 Header: <input type="text" name="header_7"><br><br>
-			  Schritt 7 Bild: <input type="file" name="pic_7"><br><br>
-			  Schritt 7 Beschreibung: <textarea type="text" name="description_7"></textarea><br><br><br>
-			  
+			  <div class="field">
+				<label>Schritt 7 Beschreibung: </label>
+				<textarea type="text" name="description_7"></textarea>
+			  </div> <br><br><br>
 			  
 			  Schritt 8 Header: <input type="text" name="header_8"><br><br>
-			  Schritt 8 Bild: <input type="file" name="pic_8"><br><br>
-			  Schritt 8 Beschreibung: <textarea type="text" name="description_8"></textarea><br><br><br>
-			  
+			  <div class="field">
+				<label>Schritt 8 Beschreibung: </label>
+				<textarea type="text" name="description_8"></textarea>
+			  </div> <br><br><br>
 			  
 			  Schritt 9 Header: <input type="text" name="header_9"><br><br>
-			  Schritt 9 Bild: <input type="file" name="pic_9"><br><br>
-			  Schritt 9 Beschreibung: <textarea type="text" name="description_9"></textarea><br><br><br>
+			  <div class="field">
+				<label>Schritt 9 Beschreibung: </label>
+				<textarea type="text" name="description_9"></textarea>
+			  </div> <br><br><br>
+			  
+			  Schritt 10 Header: <input type="text" name="header_10"><br><b
+			  <div class="field">
+				<label>Schritt 10 Beschreibung: </label>
+				<textarea type="text" name="description_10"></textarea>
+			  </div> <br><br><br>
+			  </div>
 			  
 			  
-			  Schritt 10 Header: <input type="text" name="header_10"><br><br>
-			  Schritt 10 Bild: <input type="file" name="pic_10"><br><br>
-			  Schritt 10 Beschreibung: <textarea type="text" name="description_10"></textarea><br><br><br>
 			  
 			  
 			  
-			  
-			  
-			  
-			  <input type="submit" value="Create">
+			  <input class="ui submit button" type="submit" value="Create">
 			</form>
 				<?php
 			

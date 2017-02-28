@@ -2,8 +2,30 @@
 	<head>
 		<title>Methodisch inkorrekt</title>
 		<link rel="stylesheet" href="style.css">
+		
+		<link rel="stylesheet" type="text/css" href="uk/semantic.min.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+		<script src="uk/semantic.min.js"></script>
 	</head>
 	<body>
+	
+	
+	<div style="
+    border-radius: 0px;" class="ui inverted menu">
+	  <a class="active item" href="index.php">
+		Home
+	  </a>
+	  <a class="item" href="createEXP.php">
+		Create
+	  </a>
+	  <a class="item" href="about.php">
+		About
+	  </a>
+	</div>
+	
 		<?php
 		
 			include 'data/config.php';
@@ -20,17 +42,26 @@
 				echo 'Unsere Server sind momentan nicht verfügbar!';
 			} else {
 				?>			
-			<div id="content">
-
+			<div id="content" class="ui segment">
 				<?php
 				$result = mysqli_query($conn,"SELECT * FROM exps");
-				echo "<ul>";
+				echo "<div class='ui list'>";
 					while($row = mysqli_fetch_array($result))
 					{
-					echo "<li><a href='http://134.255.234.216/exper/exper.php?exp=" . $row['exp_name'] . "'><h1>" . $row['header_intro'] . "</h1></a></li>";
-					echo "<li><h4>" . $row['description_intro'] . "</h4></li>";
+						?>
+						<div class="item">
+							<img class="ui avatar image" src="pics/lab.png">
+							<div class="content">
+							  <a class="header" href='http://134.255.234.216/exper/exper.php?exp=<?php echo $row['exp_name'] ?>'><h1><?php echo  $row['header_intro'] ?></h1></a>
+							  <div class="description"><?php echo $row['description_intro'] ?></div>
+							</div>
+						</div>
+						<hr style="height: 1px;">
+						
+						
+						<?php
 					}
-				echo "<ul>";
+				echo "<div>";
 				?>
 			</div>
 		<?php
