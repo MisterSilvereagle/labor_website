@@ -52,8 +52,8 @@
 						<div class="item">
 							<img class="ui avatar image" src="pics/lab.png">
 							<div class="content">
-							  <a class="header" href='http://134.255.234.216/exper/exper.php?exp=<?php echo $row['exp_name'] ?>'><h1><?php echo  $row['header_intro'] ?></h1></a>
-							  <div class="description"><?php echo $row['description_intro'] ?></div>
+							  <a class="header" href='http://134.255.234.216/exper/exper.php?exp=<?php echo $row['exp_name'] ?>'><h1 id="shorth"><?php echo  $row['header_intro'] ?></h1></a>
+							  <div class="description"><p id="shortp"><?php echo $row['description_intro'] ?></p></div>
 							</div>
 						</div>
 						<hr style="height: 1px;">

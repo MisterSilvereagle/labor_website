@@ -4,3 +4,27 @@
 	margin-top: 100px;
 	background-color: white;
 }
+#shortp {
+     width: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+#shorth {
+     width: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+#shortl {
+     width: 70%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+#shorts {
+     width: 90%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}

@@ -83,72 +83,72 @@
 							
 		<div id="content"  class="ui segment"> 
 			<h1 id="header">
-			 <?php echo $header_intro; ?>
+			 <p id="shortl"><?php echo $header_intro; ?> </p>
 			</h1>
 			<h4 id="description">
-			
-			 <?php echo $description_intro; ?>
+			<p id="shorts"> <?php echo $description_intro; ?>
+			 </p>
 			 
 			 </h4>
 			
 			<!---- Step 1 --->
 			<hr>
-			<h1 id="header_step">Schritt 1 >> <?php echo $header_1; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_1; ?></h4>
+			<h1 id="header_step">Schritt 1 >> <p id="shortl"><?php echo $header_1; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_1; ?></p></h4>
 			<!---- Step 1 --->
 				
 			<!---- Step 2 --->
 			<hr>
-			<h1 id="header_step">Schritt 2 >> <?php echo $header_2; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_2; ?></h4>
+			<h1 id="header_step">Schritt 2 >> <p id="shortl"><?php echo $header_2; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_2; ?></p></h4>
 			<!---- Step 2 --->
 			
 			<!---- Step 3 --->
 			<hr>
-			<h1 id="header_step">Schritt 3 >> <?php echo $header_3; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_3; ?></h4>
+			<h1 id="header_step">Schritt 3 >> <p id="shortl"><?php echo $header_3; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_3; ?></p></h4>
 			<!---- Step 3 --->
 			
 			<!---- Step 4 --->
 			<hr>
-			<h1 id="header_step">Schritt 4 >> <?php echo $header_4; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_4; ?></h4>
+			<h1 id="header_step">Schritt 4 >> <p id="shortl"><?php echo $header_4; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_4; ?></p></h4>
 			<!---- Step 4 --->
 			
 			<!---- Step 5 --->
 			<hr>
-			<h1 id="header_step">Schritt 5 >> <?php echo $header_5; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_5; ?></h4>
+			<h1 id="header_step">Schritt 5 >> <p id="shortl"><?php echo $header_5; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_5; ?></p></h4>
 			<!---- Step 5 --->
 			
 			<!---- Step 6 --->
 			<hr>
-			<h1 id="header_step">Schritt 6 >> <?php echo $header_6; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_6; ?></h4>
+			<h1 id="header_step">Schritt 6 >> <p id="shortl"><?php echo $header_6; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_6; ?></p></h4>
 			<!---- Step 6 --->
 			
 			<!---- Step 7 --->
 			<hr>
-			<h1 id="header_step">Schritt 7 >> <?php echo $header_7; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_7; ?></h4>
+			<h1 id="header_step">Schritt 7 >> <p id="shortl"><?php echo $header_7; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_7; ?></p></h4>
 			<!---- Step 7 --->
 			
 			<!---- Step 8 --->
 			<hr>
-			<h1 id="header_step">Schritt 8 >> <?php echo $header_8; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_8; ?></h4>
+			<h1 id="header_step">Schritt 8 >><p id="shortl"> <?php echo $header_8; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_8; ?></p></h4>
 			<!---- Step 8 --->
 			
 			<!---- Step 9 --->
 			<hr>
-			<h1 id="header_step">Schritt 9 >> <?php echo $header_9; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_9; ?></h4>
+			<h1 id="header_step">Schritt 9 >><p id="shortl"> <?php echo $header_9; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_9; ?></p></h4>
 			<!---- Step 9 --->
 			
 			<!---- Step 10 --->
 			<hr>
-			<h1 id="header_step">Schritt 10 >> <?php echo $header_10; ?></h1><br>
-			<h4 id="description_step"><?php echo $description_10; ?></h4>
+			<h1 id="header_step">Schritt 10 >><p id="shortl"> <?php echo $header_10; ?></p></h1><br>
+			<h4 id="description_step"><p id="shorts"><?php echo $description_10; ?></p></h4>
 			<!---- Step 10 --->
 				
 		<?php
