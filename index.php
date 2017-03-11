@@ -18,8 +18,8 @@
 	  <a class="active item" href="index.php">
 		Home
 	  </a>
-	  <a class="item" href="createEXP.php">
-		Create
+	  <a class="item" href="login.php">
+		Login
 	  </a>
 	  <a class="item" href="about.php">
 		About
@@ -39,7 +39,7 @@
 		
 			// Check connection
 			if ($conn->connect_error) {
-				echo 'Unsere Server sind momentan nicht verfügbar!';
+				echo 'ERR_NO_SERVER_FOUND';
 			} else {
 				?>			
 			<div id="content" class="ui segment">

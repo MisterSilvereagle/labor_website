@@ -3,4 +3,6 @@
     $database = "labor";
     $username = "root";
     $password = "pete";   
+
+	$cookie_name = 'dashboard_conf';
 ?>

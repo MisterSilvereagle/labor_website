@@ -12,15 +12,16 @@
 	<body>
 	
 	
+	
 	<div style="
     border-radius: 0px;" class="ui inverted menu">
-	  <a class="item" href="index.php">
+	  <a class="active item" href="index.php">
 		Home
 	  </a>
-	  <a class="item" href="createEXP.php">
-		Create
+	  <a class="item" href="login.php">
+		Login
 	  </a>
-	  <a class="active item" href="about.php">
+	  <a class="item" href="about.php">
 		About
 	  </a>
 	</div>

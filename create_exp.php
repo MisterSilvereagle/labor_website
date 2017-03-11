@@ -7,13 +7,10 @@
 					
 					 // Create connection
 					$conn = new mysqli($servername, $username, $password, $database);
-					
-					//Create experiment table
-					if ($conn->query($experiments_table) === TRUE) {} else {echo "Error creating table: " . $conn->error;}
 		
 					// Check connection
 					if ($conn->connect_error) {
-						echo 'Unsere Server sind momentan nicht verfügbar!';
+						echo 'ERR_NO_SERVER_FOUND';
 					} else {
 		
 						$exp_name= cleanup($_GET['exp_name']); 

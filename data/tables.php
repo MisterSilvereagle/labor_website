@@ -1,5 +1,17 @@
 <?php
 
+					$user_table = "CREATE TABLE IF NOT EXISTS user (
+					id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+					
+					
+					user_name VARCHAR(30) NOT NULL,
+					
+					user_pw VARCHAR(500) NOT NULL,
+					user_id VARCHAR(30) NOT NULL,
+					user_per VARCHAR(3000) NOT NULL
+					
+					)";
+
 					$experiments_table = "CREATE TABLE IF NOT EXISTS exps (
 					id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 					
@@ -60,6 +72,5 @@
 					description_10 VARCHAR(3000) NOT NULL
 					
 					)";
-
 
 ?>
