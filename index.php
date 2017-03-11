@@ -1,4 +1,5 @@
 <html>
+
 	<head>
 		<title>Methodisch inkorrekt</title>
 		<link rel="stylesheet" href="style.css">
