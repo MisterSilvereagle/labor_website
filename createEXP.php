@@ -4,6 +4,8 @@
 			include 'data/func.php';
 			if(isset($_COOKIE[$cookie_name])) {
 				$user_name=$_COOKIE[$cookie_name];
+				if(getPER($user_name)>5){
+					
 			?>
 		
 		<div id="content" class="ui segment">
@@ -106,6 +108,16 @@
 				
 		</div>
 	<?php  
-} else {
-				
-	} ?>
+		} else {
+			?>
+			<div id="content" class="ui segment">
+				<h1>You have no permisson</h1>
+			</div>
+			<?php
+		}
+	} else {
+		?>
+		<h1>You have no permisson</h1>
+		<?php
+	} 
+?>

@@ -99,4 +99,11 @@
 			}
 			return $user_per;
 		}
+	function hash_pw($pw){
+		$hashed;
+		$hashed = hash('sha256', $pw);
+		
+		
+		return $hashed;
+	}
 ?>

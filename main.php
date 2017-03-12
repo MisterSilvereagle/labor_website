@@ -26,13 +26,6 @@
 		
 	</head>
     <body onload="urlCheck();">
-		<!--<div class="ui menu">
-		  <a class="item" onClick="btn_home()">Home</a>
-		  <a class="item" onClick="btn_acc_sett()">Account Settings</a>
-		  <a class="item" onClick="btn_server_data()">Server System</a>
-		  <a class="item" onClick="btn_status()">Server Status</a>
-		  <a class="item" onClick="btn_cmd()">Server command prompt</a>
-		</div> -->
 		<div class="ui labeled icon menu">
 		  <a class="item">
 			<i onClick="btn_home()" class="home icon"></i>
@@ -80,7 +73,28 @@
 			function urlCheck() {
 				jQuery.support.cors = true;
 				if(document.URL.indexOf("server_status") >= 0){
-					$("#content").load("st.php").hide().fadeIn("slow");
+					$("#content").load("st.php", function(){
+						
+						$("#add_user").click(function(){
+							$("#content").load("create_user.php", function(){
+								$("#create").click(function(){
+											
+									var data_from_ajax_c;
+									$.get("http://134.255.234.216/exper/create_user_php.php?user_name="+document.getElementById("user_name").value+"&user_pw="+document.getElementById("user_pw").value+"&user_per="+document.getElementById("user_per").value+"", function(data) {
+											data_from_ajax_c = data;
+											if(data_from_ajax_c=="success"){	
+												location.reload();
+											} else if(data_from_ajax_c=="err"){
+												
+											}
+
+									});
+								});
+							});
+						});
+						
+						
+					}).hide().fadeIn("slow");
 				}else if(document.URL.indexOf("server_data") >= 0){
 					$("#content").load("createEXP.php", function(){
 						

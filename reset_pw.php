@@ -1,11 +1,16 @@
 <?php
 			include 'data/config.php';
 			include 'data/tables.php';
+			include 'data/func.php';
+
 			if(isset($_COOKIE[$cookie_name])) {
 				$user_name=$_COOKIE[$cookie_name];
 
-				$st_pw=$_GET['stpw'];
-				$new_pw=$_GET['newpw'];
+				$st_pw_unhashed =$_GET['stpw'];
+				$new_pw_unhashed =$_GET['newpw'];
+				
+				$new_pw = hash_pw($new_pw_unhashed);
+				$st_pw = hash_pw($st_pw_unhashed);
 
 				$pw_DATABASE;
 

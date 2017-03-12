@@ -1,6 +1,7 @@
 <?php
 			include 'data/config.php';
 			include 'data/tables.php';
+			include 'data/func.php';
 		
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $database);
@@ -13,7 +14,8 @@
 				echo 'Unsere Server sind momentan nicht verfügbar!';
 			} else {		
 				$user=$_GET['user'];
-				$pw=$_GET['pw'];
+				$pw_unhashed=$_GET['pw'];
+				$pw = hash_pw($pw_unhashed);
 				
 				$user_DATABASE;
 				$pw_DATABASE;

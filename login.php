@@ -38,14 +38,14 @@
 		  <div class="header">
 			Login was successful.
 		  </div>
-		  <p>You may now log-in with the username you have chosen</p>
+		  <p>You are loged in!</p>
 		</div>
 		<div id="false" style="left: 37%; width: 25%; top: 24%;" class="ui negative message">
 		  <i class="close icon"></i>
 		  <div class="header">
 			Login failed!
 		  </div>
-		  <p>That offer has expired
+		  <p>Wrong data!
 		</p>
 		</div>
 		<script type="text/javascript">
