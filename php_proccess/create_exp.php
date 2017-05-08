@@ -1,16 +1,16 @@
 <?php
 			
 			
-					include 'data/config.php';
-					include 'data/tables.php';
-					include 'data/func.php';
+					include '../php_data/config.php';
+					include '../php_data/tables.php';
+					include '../php_data/func.php';
 					
 					 // Create connection
 					$conn = new mysqli($servername, $username, $password, $database);
 		
 					// Check connection
 					if ($conn->connect_error) {
-						echo 'ERR_NO_SERVER_FOUND';
+						echo 'Unsere Server sind momentan nicht verfügbar!';
 					} else {
 		
 						$exp_name= cleanup($_GET['exp_name']); 

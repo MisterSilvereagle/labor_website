@@ -1,5 +1,5 @@
 <?php
-			include 'data/config.php';
+			include 'php_data/config.php';
 			if(isset($_COOKIE[$cookie_name])) {
 
 			$user_name=$_COOKIE[$cookie_name];
@@ -23,7 +23,6 @@
 		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		  crossorigin="anonymous"></script>
 		<script src="uk/semantic.min.js"></script>
-		
 	</head>
     <body onload="urlCheck();">
 		<div class="ui labeled icon menu">
@@ -73,14 +72,14 @@
 			function urlCheck() {
 				jQuery.support.cors = true;
 				if(document.URL.indexOf("server_status") >= 0){
-					$("#content").load("st.php", function(){
+					$("#content").load("php_proccess/st.php", function(){
 						
 						$("#add_user").click(function(){
-							$("#content").load("create_user.php", function(){
+							$("#content").load("php_proccess/create_user.php", function(){
 								$("#create").click(function(){
 											
 									var data_from_ajax_c;
-									$.get("http://134.255.234.216/exper/create_user_php.php?user_name="+document.getElementById("user_name").value+"&user_pw="+document.getElementById("user_pw").value+"&user_per="+document.getElementById("user_per").value+"", function(data) {
+									$.get("http://134.255.234.216/exper/php_proccess/create_user_php.php?user_name="+document.getElementById("user_name").value+"&user_pw="+document.getElementById("user_pw").value+"&user_per="+document.getElementById("user_per").value+"", function(data) {
 											data_from_ajax_c = data;
 											if(data_from_ajax_c=="success"){	
 												location.reload();
@@ -96,7 +95,7 @@
 						
 					}).hide().fadeIn("slow");
 				}else if(document.URL.indexOf("server_data") >= 0){
-					$("#content").load("createEXP.php", function(){
+					$("#content").load("php_proccess/createEXP.php", function(){
 						
 						$('#err').hide();
 						$('#suc').hide();
@@ -110,7 +109,7 @@
 							} else {
 									//text = text.replace(/\n\r?/g, '<br />');
 								var data_from_ajax;
-								$.get("http://134.255.234.216/exper/create_exp.php?exp_name="+document.getElementById("exp_name").value
+								$.get("http://134.255.234.216/exper/php_proccess/create_exp.php?exp_name="+document.getElementById("exp_name").value
 									+"&header_intro="+document.getElementById("header_intro").value
 									+"&description_intro="+document.getElementById("description_intro").value.replace(/\n\r?/g, '<br />')
 									+"&header_1="+document.getElementById("header_1").value
@@ -159,7 +158,7 @@
 				}
 				
 				else if(document.URL.indexOf("acc_set") >= 0){
-					$("#content").load("ACC_SETT.php", function(){
+					$("#content").load("php_proccess/ACC_SETT.php", function(){
 			
 								$("#user_failed").hide();
 								$("#user_success").hide();
@@ -168,7 +167,7 @@
 						
 								$("#res_pw").click(function(){
 													var data_from_ajax;
-													$.get('http://134.255.234.216/exper/reset_pw.php?stpw='+document.getElementById('old_pw').value+'&newpw='+document.getElementById('new_pw').value+'', function(data) {
+													$.get('http://134.255.234.216/exper/php_proccess/reset_pw.php?stpw='+document.getElementById('old_pw').value+'&newpw='+document.getElementById('new_pw').value+'', function(data) {
 														data_from_ajax = data;
 														if(data_from_ajax=="wrong_pws"){
 															$("#pw_failed").show().fadeIn("slow");
@@ -181,7 +180,7 @@
 								});
 								$("#res_user").click(function(){
 													var data_from_ajax;
-													$.get('http://134.255.234.216/exper/reset_user.php?stuser='+document.getElementById('old_user').value+'&newuser='+document.getElementById('new_user').value+'', function(data) {
+													$.get('http://134.255.234.216/exper/php_proccess/reset_user.php?stuser='+document.getElementById('old_user').value+'&newuser='+document.getElementById('new_user').value+'', function(data) {
 														data_from_ajax = data;
 														if(data_from_ajax=="wrong_pws"){
 															$("#user_failed").show().fadeIn("slow");

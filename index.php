@@ -1,15 +1,19 @@
 <html>
 
 	<head>
+		<!-- Set title -->
 		<title>Methodisch inkorrekt</title>
-		<link rel="stylesheet" href="style.css">
 		
+		<!-- Implement Stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Implement Semantic CSS library from https://semantic-ui.com/ -->
 		<link rel="stylesheet" type="text/css" href="uk/semantic.min.css">
-		<script
-		  src="https://code.jquery.com/jquery-3.1.1.min.js"
-		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-		  crossorigin="anonymous"></script>
+		<!-- Implement Semantic JS library from https://semantic-ui.com/-->
 		<script src="uk/semantic.min.js"></script>
+		
+		<!-- Implement JQuery from jquery.com -->
+		<script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	
@@ -29,8 +33,8 @@
 	
 		<?php
 		
-			include 'data/config.php';
-			include 'data/tables.php';
+			include 'php_data/config.php';
+			include 'php_data/tables.php';
 		
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $database);
@@ -40,7 +44,7 @@
 		
 			// Check connection
 			if ($conn->connect_error) {
-				echo 'ERR_NO_SERVER_FOUND';
+				echo 'Unsere Server sind momentan nicht verfügbar!';
 			} else {
 				?>			
 			<div id="content" class="ui segment">

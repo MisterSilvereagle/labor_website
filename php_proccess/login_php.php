@@ -1,14 +1,11 @@
 <?php
-			include 'data/config.php';
-			include 'data/tables.php';
-			include 'data/func.php';
+			include '../php_data/config.php';
+			include '../php_data/tables.php';
+			include '../php_data/func.php';
 		
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $database);
 					
-			//Create user table
-			if ($conn->query($user_table) === TRUE) {} else {echo "Error creating table: " . $conn->error;}
-		
 			// Check connection
 			if ($conn->connect_error) {
 				echo 'Unsere Server sind momentan nicht verfügbar!';

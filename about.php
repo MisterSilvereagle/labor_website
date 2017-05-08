@@ -1,13 +1,17 @@
 <html>
 	<head>
+		<!-- Set title -->
 		<title>Methodisch inkorrekt</title>
-		<link rel="stylesheet" href="style.css">
+		<!-- Implement Stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Implement Semantic CSS library from https://semantic-ui.com/ -->
 		<link rel="stylesheet" type="text/css" href="uk/semantic.min.css">
-		<script
-		  src="https://code.jquery.com/jquery-3.1.1.min.js"
-		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-		  crossorigin="anonymous"></script>
+		<!-- Implement Semantic JS library from https://semantic-ui.com/-->
 		<script src="uk/semantic.min.js"></script>
+		
+		<!-- Implement JQuery from jquery.com -->
+		<script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	

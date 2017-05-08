@@ -1,7 +1,7 @@
 <?php
 
-			include 'data/config.php';
-			include 'data/func.php';
+			include '../php_data/config.php';
+			include '../php_data/func.php';
 			if(isset($_COOKIE[$cookie_name])) {
 				$user_name=$_COOKIE[$cookie_name];
 				if(getPER($user_name)>8){
@@ -12,7 +12,7 @@
 
 				// Check connection
 				if ($conn->connect_error) {
-					echo 'ERR_NO_SERVER_FOUND';
+				echo 'Unsere Server sind momentan nicht verfügbar!';
 				} else {
 				
 			?>

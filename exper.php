@@ -1,14 +1,18 @@
+
 <html>
 	<head>
+		<!-- Set title -->
 		<title>Methodisch inkorrekt</title>
-		<link rel="stylesheet" href="style.css">
+		<!-- Implement Stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
 		
+		<!-- Implement Semantic CSS library from https://semantic-ui.com/ -->
 		<link rel="stylesheet" type="text/css" href="uk/semantic.min.css">
-		<script
-		  src="https://code.jquery.com/jquery-3.1.1.min.js"
-		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-		  crossorigin="anonymous"></script>
+		<!-- Implement Semantic JS library from https://semantic-ui.com/-->
 		<script src="uk/semantic.min.js"></script>
+		
+		<!-- Implement JQuery from jquery.com -->
+		<script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	
@@ -18,8 +22,8 @@
 	  <a class="active item" href="index.php">
 		Home
 	  </a>
-	  <a class="item" href="createEXP.php">
-		Create
+	  <a class="item" href="login.php">
+		Login
 	  </a>
 	  <a class="item" href="about.php">
 		About
@@ -27,14 +31,11 @@
 	</div>
 		<?php
 		
-					include 'data/config.php';
-					include 'data/tables.php';
+					include 'php_data/config.php';
+					include 'php_data/tables.php';
 		
 					 // Create connection
 					$conn = new mysqli($servername, $username, $password, $database);
-					
-					//Create experiment table
-					if ($conn->query($experiments_table) === TRUE) {} else {echo "Error creating table: " . $conn->error;}
 		
 					// Check connection
 					if ($conn->connect_error) {

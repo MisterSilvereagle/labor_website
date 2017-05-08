@@ -1,9 +1,9 @@
 <?php
 			
 			
-					include 'data/config.php';
-					include 'data/tables.php';
-					include 'data/func.php';
+					include '../php_data/config.php';
+					include '../php_data/tables.php';
+					include '../php_data/func.php';
 					
 					 // Create connection
 					$conn = new mysqli($servername, $username, $password, $database);
